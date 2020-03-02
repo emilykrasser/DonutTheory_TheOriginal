@@ -1,0 +1,114 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/*.page-header {
+    background-image: url("Background.png");
+    background-size:auto;
+    background-attachment: fixed;
+}*/
+
+body {
+    background-image: url("Background.png");
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.page-header {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+
+    a:link {
+        color: rgb(49, 40, 55);
+    }
+
+    a:visited {
+        color: rgb(49, 40, 55);
+    }
+
+    a:hover {
+        color: rgb(255, 20, 147);
+    }
+
+    a:active {
+        color: rgb(255, 20, 147);
+    }
+}
+
+.main-content {
+    background-color: rgba(245, 245, 245, 0.75);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(pocket_memesbruh03.ttf);
+}
+
+h1 {
+    font-family: pixel;
+    font-size: 56px;
+}
+
+h2 {
+    font-family: pixel;
+    color: rgb(49, 40, 55);
+    font-size: 50px;
+}
+
+.project-name {
+    font-size: 65px;
+}
+
+.project-tagline {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    font-family: pixel;
+    font-size: 40px;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: rgb(49, 40, 55);
+}
+
+.main-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        color: rgb(49, 40, 55);
+    }
+
+    a:link {
+        color: rgb(255, 105, 180);
+    }
+
+    a:visited {
+        color: rgb(255, 105, 180);
+    }
+
+    a:hover {
+        color: rgb(255, 20, 147);
+    }
+
+    a:active {
+        color: rgb(255, 105, 180);
+    }
+}
+
