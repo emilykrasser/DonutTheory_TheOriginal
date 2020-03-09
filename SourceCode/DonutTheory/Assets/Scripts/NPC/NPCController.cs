@@ -100,19 +100,25 @@ public class NPCController : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D col)
     {
-        enteredTrigger = true;
-        if (PressYes)
+        if (col.tag == "Player")
         {
-            gameObject.GetComponent<PressSomethingController>().PlayUp();
+            enteredTrigger = true;
+            if (PressYes)
+            {
+                gameObject.GetComponent<PressSomethingController>().PlayUp();
+            }
         }
     }
 
     protected void OnTriggerExit2D(Collider2D col)
     {
-        enteredTrigger = false;
-        if (PressYes)
+        if (col.tag == "Player")
         {
-            gameObject.GetComponent<PressSomethingController>().PlayDown();
+            enteredTrigger = false;
+            if (PressYes)
+            {
+                gameObject.GetComponent<PressSomethingController>().PlayDown();
+            }
         }
     }
 

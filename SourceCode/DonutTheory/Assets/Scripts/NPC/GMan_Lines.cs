@@ -10,8 +10,14 @@ public class GMan_Lines : NPCLines
         characterLines = new List<List<string>>();
 
         // First block
-        characterLines.Add(new List<string> { "Hello" });
-        characterLines.Add(new List<string> { "Did you find my time capsule?" });
+        characterLines.Add(new List<string> { "Dr. Satellite!! Your calculations were off!",
+                                            "Instead of creating an infinite supply of donuts for our weekly team meetings,",
+                                            "you opened up a donut portal to a donut dimension!!1!!",
+                                            "The donuts seem... harmless... but they emit strange noises",
+                                            "and modify the environment when *eliminated*.",
+                                            "They're also delicious...",
+                                            "I'm not sure what to do..." });
+        characterLines.Add(new List<string> { "Is this a good or a bad thing???" });
         // Second block
         characterLines.Add(new List<string> { "Oh... You found my time capsule...",
                                             "... It has a passcode and... I can't remember..." });
