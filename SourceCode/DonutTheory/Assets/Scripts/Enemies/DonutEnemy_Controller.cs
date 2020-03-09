@@ -10,10 +10,19 @@ public class DonutEnemy_Controller : MonoBehaviour
 
     public bool m_Colliding;
 
+    public AudioClip m_Clip;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        System.Random rand = new System.Random();
+        List<Object> tempDonutSounds = GameObject.Find("GameManager").GetComponent<GameManager>().m_DonutSounds;
+        int index = rand.Next(0, tempDonutSounds.Count);
+        Debug.Log(index);
+        m_Clip = (AudioClip)tempDonutSounds[index];
+
+        gameObject.GetComponent<AudioSource>().clip = m_Clip;
+        gameObject.GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame

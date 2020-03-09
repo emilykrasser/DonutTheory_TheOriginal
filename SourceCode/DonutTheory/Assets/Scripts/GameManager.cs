@@ -4,10 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
     public Dictionary<string, Object> nPCSprites;
+
+    public List<Object> m_DonutSounds;
 
     //Reference to mainCamera to edit the culling masks
     public Camera mainCamera;
@@ -25,6 +28,12 @@ public class GameManager : MonoBehaviour
     private static GameManager Instance; //The instance of the GameManager that the user has access to.
 
     // Use this for initialization
+
+    private void Awake()
+    {
+        m_DonutSounds = Resources.LoadAll("DonutSounds", typeof(AudioClip)).ToList();
+    }
+
     void Start ()
     {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
