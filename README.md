@@ -1,2 +1,4 @@
 # DonutTheory
-Do you still think there is nothing to donut theory? I don't think so... >:[
+Controls are as follows:
+WASD or arrows to move
+E to interact
