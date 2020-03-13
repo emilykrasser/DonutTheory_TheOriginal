@@ -14,17 +14,16 @@ public class GMan_Lines : NPCLines
                                             "Instead of creating an infinite supply of donuts for our weekly team meetings,",
                                             "you opened up a donut portal to a donut dimension!!1!!",
                                             "The donuts seem... harmless... but they emit strange noises",
-                                            "and modify the environment when *eliminated*.",
+                                            "and create TVs only to make them dissapear when *eliminated*.",
                                             "They're also delicious...",
                                             "I'm not sure what to do..." });
-        characterLines.Add(new List<string> { "Is this a good or a bad thing???" });
+        characterLines.Add(new List<string> { "Is this a good or a bad thing???",
+                                            "I really want to eat some of these donuts..."});
         // Second block
-        characterLines.Add(new List<string> { "Oh... You found my time capsule...",
-                                            "... It has a passcode and... I can't remember..." });
-        characterLines.Add(new List<string> { "Do you have any idea what it could be? I remember it was four digits?" });
-        // Third block
-        characterLines.Add(new List<string> { "Hahaha..." });
-        characterLines.Add(new List<string> { "Thank you so much. I don't feel as sad now." });
+        characterLines.Add(new List<string> { "You brought me donuts?!?!",
+                                            "You're the best employee ever",
+                                            "(even if you caused the donut destruction of this plane of reality)" });
+        characterLines.Add(new List<string> { "Goodbye." });
 
         numInteractions = 3;
     }

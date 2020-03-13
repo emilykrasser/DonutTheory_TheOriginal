@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using UnityEngine.Video;
+using UnityStandardAssets._2D;
 
 public class GameManager : MonoBehaviour
 {
@@ -93,6 +94,10 @@ public class GameManager : MonoBehaviour
         {
             GameObject.Find("NPC_StrangeLady").GetComponent<NPCController>().MoveToNextInteraction();
             GameObject.Find("NPC_StrangeLady").GetComponent<NPCController>().defaultLines = false;
+
+            GameObject.Find("NPC_GMan").GetComponent<NPCController>().MoveToNextInteraction();
+            GameObject.Find("NPC_GMan").GetComponent<NPCController>().defaultLines = false;
+            
             m_NumberOfDonutsCollected = -1;
         }
     }
@@ -116,6 +121,7 @@ public class GameManager : MonoBehaviour
     public void AcivateNPCInteractionPanel(bool set)
     {
         nPCInteractionPanel.SetActive(set);
+        GameObject.FindGameObjectWithTag("Player").gameObject.GetComponent<Platformer2DUserControl>().enabled = !set;
     }
 
     public void StartNPCInteractEffect()

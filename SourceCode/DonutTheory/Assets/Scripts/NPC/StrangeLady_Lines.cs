@@ -20,12 +20,15 @@ public class StrangeLady_Lines : NPCLines
                                             "I've seen 3 around so far. >:]"});
         characterLines.Add(new List<string> { "Why don't you collect all those strange, magical donuts and come back here." });
         // Second block
-        characterLines.Add(new List<string> { "Oh... You found my time capsule...",
-                                            "... It has a passcode and... I can't remember..." });
-        characterLines.Add(new List<string> { "Do you have any idea what it could be? I remember it was four digits?" });
-        // Third block
-        characterLines.Add(new List<string> { "Hahaha..." });
-        characterLines.Add(new List<string> { "Thank you so much. I don't feel as sad now." });
+        characterLines.Add(new List<string> { "Oh... You found all of the donuts...",
+                                            "...",
+                                            "...",
+                                            "Nothing's happening...",
+                                            "Maybe it's not curable.",
+                                            "Well anyway, now you have some donuts or whatever."});
+        characterLines.Add(new List<string> { "Portals are like... Kinder surprise eggs.",
+                                            "Dangerous only to Americans.",
+                                            "I wonder what prize you'll get (probably a donut)." });
 
         numInteractions = 3;
     }

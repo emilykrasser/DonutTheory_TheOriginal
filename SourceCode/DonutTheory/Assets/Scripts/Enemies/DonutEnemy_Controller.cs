@@ -22,6 +22,9 @@ public class DonutEnemy_Controller : MonoBehaviour
 
         gameObject.GetComponent<AudioSource>().clip = m_Clip;
         gameObject.GetComponent<AudioSource>().Play();
+
+        transform.GetChild(2).gameObject.SetActive(false);
+        StartCoroutine(WaitEnableKillCollider());
     }
 
     // Update is called once per frame
@@ -45,5 +48,11 @@ public class DonutEnemy_Controller : MonoBehaviour
         Gizmos.color = Color.red;
 
         Gizmos.DrawLine(m_SightStart.position, m_SightEnd.position);
+    }
+
+    IEnumerator WaitEnableKillCollider()
+    {
+        yield return new WaitForSeconds(1f);
+        transform.GetChild(2).gameObject.SetActive(true);
     }
 }
