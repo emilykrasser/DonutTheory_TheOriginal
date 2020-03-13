@@ -5,12 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using UnityEngine.Video;
 
 public class GameManager : MonoBehaviour
 {
     public Dictionary<string, Object> nPCSprites;
 
-    public List<Object> m_DonutSounds;
+    public List<Object> m_DonutSounds, m_TVVideos;
 
     //Reference to mainCamera to edit the culling masks
     public Camera mainCamera;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         m_DonutSounds = Resources.LoadAll("DonutSounds", typeof(AudioClip)).ToList();
+        m_TVVideos = Resources.LoadAll("TVClips", typeof(VideoClip)).ToList();
     }
 
     void Start ()

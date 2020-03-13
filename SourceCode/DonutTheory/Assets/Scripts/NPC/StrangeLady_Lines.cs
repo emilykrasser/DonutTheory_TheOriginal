@@ -15,7 +15,7 @@ public class StrangeLady_Lines : NPCLines
                                             "and it has mutated me into a strange donut... person...",
                                             "...",
                                             "Which is fine... I guess...",
-                                            "Maybe theres a cure; I've seen some strange looking donuts around here.",
+                                            "Maybe theres a cure; I've seen some strange looking donuts around here. A lot of them, actually.",
                                             "But the ones I'm talking about are very interesting. Maybe try colecting them and coming back to me.",
                                             "I've seen 5 around so far. >:]"});
         characterLines.Add(new List<string> { "Why don't you collect all those strange, magical donuts and come back here." });
