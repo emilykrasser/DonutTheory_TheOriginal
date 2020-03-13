@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
             {
                 nPCInteractionPanel = GameObject.Find("NPCPopupInteractionPanel");
                 nPCInteractionPanel.SetActive(false);
-                nPCInteractionText = nPCInteractionPanel.transform.GetChild(1).GetChild(0).GetComponent<Text>();
+                nPCInteractionText = nPCInteractionPanel.transform.GetChild(2).GetChild(0).GetComponent<Text>();
             }
         }
 
