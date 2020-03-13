@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
 
     private static GameManager Instance; //The instance of the GameManager that the user has access to.
 
+    public int m_NumberOfDonutsCollected = 0;
+
     // Use this for initialization
 
     private void Awake()
