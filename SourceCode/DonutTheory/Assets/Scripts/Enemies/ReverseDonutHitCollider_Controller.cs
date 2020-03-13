@@ -7,11 +7,6 @@ public class ReverseDonutHitCollider_Controller : MonoBehaviour
 {
     public bool m_PlayerCollide, m_PlayerKillBox;
 
-    public bool m_Image;
-
-    public GameObject m_Modify;
-    public Sprite m_Sprite;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +18,7 @@ public class ReverseDonutHitCollider_Controller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && m_PlayerCollide && !m_PlayerKillBox)
         {
-            if (m_Modify != null && m_Sprite != null)
-            {
-                if (m_Image)
-                    m_Modify.GetComponent<Image>().sprite = m_Sprite;
-                else
-                    m_Modify.GetComponent<SpriteRenderer>().sprite = m_Sprite;
-            }
+            Destroy(gameObject.transform.parent.gameObject.GetComponent<ReverseDonutEnemy_Controller>().m_InstantiatedTV);
             Destroy(gameObject.transform.parent.gameObject);
         }
         if (m_PlayerCollide && m_PlayerKillBox)

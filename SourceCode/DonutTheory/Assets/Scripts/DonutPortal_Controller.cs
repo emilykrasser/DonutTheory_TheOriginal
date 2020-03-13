@@ -13,8 +13,8 @@ public class DonutPortal_Controller : MonoBehaviour
     void Start()
     {
         m_FloatUp = true;
-        m_UpPos = gameObject.transform.position + new Vector3(0, 3);
-        m_DownPos = gameObject.transform.position + new Vector3(0, -3);
+        m_UpPos = gameObject.transform.position + new Vector3(0, 1.5f);
+        m_DownPos = gameObject.transform.position + new Vector3(0, -1.5f);
     }
 
     // Update is called once per frame
@@ -43,12 +43,10 @@ public class DonutPortal_Controller : MonoBehaviour
     protected void OnTriggerEnter2D(Collider2D col)
     {
         enteredTrigger = true;
-        gameObject.GetComponent<PressSomethingController>().PlayUp();
     }
 
     protected void OnTriggerExit2D(Collider2D col)
     {
         enteredTrigger = false;
-        gameObject.GetComponent<PressSomethingController>().PlayDown();
     }
 }

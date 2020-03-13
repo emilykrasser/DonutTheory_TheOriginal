@@ -10,10 +10,23 @@ public class ReverseDonutEnemy_Controller : MonoBehaviour
 
     public bool m_Colliding;
 
+    public GameObject m_InstantiatedTV;
+
     // Start is called before the first frame update
     void Start()
     {
+        List<GameObject> tempTVPrefabs = GameObject.Find("GameManager").GetComponent<GameManager>().m_TVPrefabs;
+        GameObject[] tVSpawns = GameObject.FindGameObjectsWithTag("TVSpawn");
 
+        System.Random rand = new System.Random();
+
+        int index = rand.Next(0, tempTVPrefabs.Count);
+        GameObject prefab = tempTVPrefabs[index];
+
+        index = rand.Next(0, tVSpawns.Length - 1);
+        Transform tVTransform = tVSpawns[index].transform;
+
+        m_InstantiatedTV = Instantiate(prefab, tVTransform.position, tVTransform.rotation);
     }
 
     // Update is called once per frame

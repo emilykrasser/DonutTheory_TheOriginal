@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Dictionary<string, Object> nPCSprites;
 
     public List<Object> m_DonutSounds, m_TVVideos;
+    public List<GameObject> m_TVPrefabs;
 
     //Reference to mainCamera to edit the culling masks
     public Camera mainCamera;
