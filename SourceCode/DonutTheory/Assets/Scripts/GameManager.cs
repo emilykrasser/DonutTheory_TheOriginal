@@ -88,6 +88,13 @@ public class GameManager : MonoBehaviour
                 nPCInteractionText = nPCInteractionPanel.transform.GetChild(1).GetChild(0).GetComponent<Text>();
             }
         }
+
+        if (m_NumberOfDonutsCollected == 3)
+        {
+            GameObject.Find("NPC_StrangeLady").GetComponent<NPCController>().MoveToNextInteraction();
+            GameObject.Find("NPC_StrangeLady").GetComponent<NPCController>().defaultLines = false;
+            m_NumberOfDonutsCollected = -1;
+        }
     }
 
     public void SetObjectInteractPopUpText(string str)

@@ -1471,7 +1471,7 @@ PrefabInstance:
     - target: {fileID: 3497555333894988921, guid: d3abdde004893cf408eb81ca48a0806e,
         type: 3}
       propertyPath: m_Name
-      value: NPC_Example
+      value: NPC_StrangeLady
       objectReference: {fileID: 0}
     - target: {fileID: 3497555333894988921, guid: d3abdde004893cf408eb81ca48a0806e,
         type: 3}
