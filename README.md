@@ -6,10 +6,8 @@ Controls are as follows: <br/>
 * WASD or arrows to move 
 * E to interact <br/>
 <br/>
-
 ## Final Gameplay Video
-Coming soon with 13 hour upload time
-[![Coming soon with 13 hour upload time](/Images/TrailerPlaceholder.png)](https://emilykrasser.github.io/DonutTheory/)
+[![Final gameplay video](/Images/TrailerPlaceholder.png)](https://youtu.be/jfy50kx0dhU)
 
 ## [Final Artist Statement](https://github.com/emilykrasser/DonutTheory/blob/master/EmilyKrasser_FinalArtistStatement.pdf)
 
