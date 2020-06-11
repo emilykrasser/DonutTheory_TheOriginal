@@ -1,4 +1,4 @@
-# DonutTheory
+# [DonutTheory](https://emilykrasser.github.io/DonutTheory/)
 
 ## Note! When playing Donut Theory please use fullscreen!
 
